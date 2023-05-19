@@ -1,0 +1,103 @@
+/**color*/
+/*text*/
+/**/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+  color: #ffffff;
+  width: 100%;
+}
+
+.container {
+  background-image: url(../fon2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 45vh;
+  padding: 1% 0% 0% 0%;
+  text-align: center;
+}
+.container .content {
+  background-color: rgba(42, 42, 42, 0.831372549);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 10% 4% 6% 2%;
+  margin: 23% 6% 0% 0%;
+  min-width: 280px;
+}
+.container .content h1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+.container .content p {
+  margin: 3% 3% 5% 0%;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 13px;
+  padding-top: 2%;
+}
+.container form .form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.container form .form-control input {
+  width: 90%;
+  height: 35px;
+  padding-top: 2%;
+  border: none;
+  border: 1px solid #d11d76;
+  background-color: #ffffff;
+  color: #000000;
+}
+.container form .form-control label {
+  font-weight: 700;
+  padding-bottom: 0;
+  font-size: 75%;
+  text-align: right;
+}
+.container form button {
+  border: none;
+  border-radius: 2px;
+  background-color: #d11d76;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 100%;
+  width: 30%;
+  margin: 3% 0;
+  padding: 2% 0;
+  text-align: center;
+}
+
+@media (min-width: 550px) and (max-width: 2000px) {
+  *,
+  *::after,
+  *::before {
+    text-align: right;
+  }
+  .container {
+    padding: 2% 13% 0 25%;
+    height: 55vh;
+    text-align: right;
+  }
+  .container .content {
+    padding: 7% 4% 7% 2%;
+    margin: 10% 3%;
+    max-width: 400px;
+  }
+  .container .content p {
+    margin: 3% 3% 5% 4%;
+  }
+}/*# sourceMappingURL=main.css.map */

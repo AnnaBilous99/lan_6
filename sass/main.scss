@@ -1,0 +1,89 @@
+@import "../sass/mixin";
+@import "../sass/general";
+@import "../sass/content";
+
+.container {
+  background-image: url(../fon2.jpg);
+  @include img;
+  height: 45vh;
+  padding: 1% 0% 0% 0%;
+  text-align: $t-alignC;
+
+  .content {
+    background-color: $b-colorForm;
+    @include flex1;
+    gap: 25px;
+    padding: 10% 4% 6% 2%;
+    margin: 23% 6% 0% 0%;
+    min-width: 280px;
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 3% 3% 5% 0%;
+    }
+  }
+  form {
+    @include flex2;
+    width: $width-100;
+    gap: 13px;
+    padding-top: 2%;
+
+    .form-control {
+      @include flex2;
+      width: $width-100;
+
+      input {
+        width: 90%;
+        height: 35px;
+        padding-top: 2%;
+        border: $border-none;
+        border: 1px solid #d11d76;
+        background-color: $b-color;
+        color: $colorInput;
+      }
+      label {
+        font-weight: $f-weight;
+        padding-bottom: 0;
+        font-size: 75%;
+        text-align: $t-alignR;
+      }
+    }
+    button {
+      border: $border-none;
+      border-radius: 2px;
+      background-color: $colorForm;
+      color: $colorText;
+      font-weight: $f-weight;
+      font-size: $width-100;
+      width: 30%;
+      margin: 3% 0;
+      padding: 2% 0;
+      text-align: $t-alignC;
+    }
+  }
+}
+@media (min-width: 550px) and (max-width: 2000px) {
+  *,
+  *::after,
+  *::before {
+    text-align: $t-alignR;
+  }
+  .container {
+    padding: 2% 13% 0 25%;
+    height: 55vh;
+    text-align: $t-alignR;
+
+    .content {
+      padding: 7% 4% 7% 2%;
+      margin: 10% 3%;
+      max-width: 400px;
+      p {
+        margin: 3% 3% 5% 4%;
+      }
+    }
+  }
+}
