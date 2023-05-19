@@ -30,7 +30,7 @@
   gap: 25px;
   padding: 10% 4% 6% 2%;
   margin: 23% 6% 0% 0%;
-  min-width: 280px;
+  max-width: 260px;
 }
 .container .content h1 {
   font-size: 1.75rem;
@@ -81,7 +81,7 @@
   text-align: center;
 }
 
-@media (min-width: 550px) and (max-width: 2000px) {
+@media (min-width: 450px) and (max-width: 2000px) {
   *,
   *::after,
   *::before {
@@ -100,4 +100,4 @@
   .container .content p {
     margin: 3% 3% 5% 4%;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
